@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>gulp.com</title>
+<link href="css/common.css" rel="stylesheet" >
+<link href="css/index.css" rel="stylesheet" >
+<style>
+html{font-size:20px;}
+html,body{ width:100%; height:100%;}
+header{ height:50px; width:100%; background:#cf4646; line-height:50px; display:-webkit-box; position:fixed; left:0; top:0; z-index:1000;}
+header h1 {margin-left:2.5rem; -webkit-box-flex:1;}
+header h1 a{ color:#fff; font-size:18px;}
+	
+	
+.banner{ width:100%; height:376px; background:#cf4646; margin-top:50px; text-align:center;}
+.banner img{ margin-top:67px;}
+.banner p{ color:#fff; line-height:60px;}
+.employ{ border:1px solid #999; padding:5px; color:#fff;}
+.content{ margin:0 50px;}
+.content li h2{ line-height:50px; margin-top:30px;}
+	
+@media(min-width:990px)
+{	
+	header ul{ width:540px; height:50px; margin-right:2.5rem;}
+	header ul a{ color:#fff; float:left; margin:0 10px; font-size:14px;}
+	.content li{width:50%; float:left; box-sizing:border-box; padding-right:30px; }
+	header span{ display:none;}
+}
+
+@media (min-width:768px) and (max-width:990px){
+	.content li{width:100%; float:left; }
+	header ul{ width:540px; height:50px; margin-right:2.5rem;}
+	header ul a{ color:#fff; float:left; margin:0 10px; font-size:14px;}
+	header span{ display:none;}	
+}
+
+@media (max-width:768px){
+	.content li{width:100%; float:left; }
+	header ul{ display:none;}
+	header span{ display:block; background:url(images/menu.png) no-repeat; width:52px; height:40px; margin-right:15px; margin-top:15px;}
+}
+</style>
+</head>
+
+<body>
+<header>
+	<h1><a href="javascript:;">Gulp中文网</a></h1>
+    <span class="menu"></span>
+    <ul>
+    	<li>
+        	<a href="javascript:;">首页</a>
+            <a href="javascript:;">中文文档</a>
+            <a href="javascript:;">入门指南</a>
+            <a href="javascript:;">API</a>
+            <a href="javascript:;">插件开发</a>
+            <a href="javascript:;">常见问题</a>
+            <a href="javascript:;">使用技巧</a>
+        </li>
+    </ul>
+</header>
+<section>
+	<div class="banner">
+    	<img src="images/logo.jpg" alt="" >
+        <p>用自动化构建工具增强你的工作流程！</p>
+        <a class="employ" href="javascript:;">开始使用</a>
+    </div>
+</section>
+<div class="content">
+	<ul class="clearFix">
+    	<li>
+        	<h2>易于使用</h2>
+            <p>通过代码优于配置的策略，Gulp 让简单的任务简单，复杂的任务可管理。</p>
+        </li>
+       <li>
+        	<h2>构建快速</h2>
+            <p>利用 Node.js 流的威力，你可以快速构建项目并减少频繁的 IO 操作。</p>
+        </li>
+        <li>
+        	<h2>插件高质</h2>
+            <p>Gulp 严格的插件指南确保插件如你期望的那样简洁高质得工作。</p>
+        </li>
+        <li>
+        	<h2>易于学习</h2>
+            <p>通过最少的 API，掌握 Gulp 毫不费力，构建工作尽在掌握：如同一系列流管道。</p>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
